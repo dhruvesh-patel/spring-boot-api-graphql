@@ -1,0 +1,24 @@
+schema {
+ query: Query
+}
+
+type Query {
+ allBeneficiary: [Beneficiary]
+ beneficiary(beneficiaryId: String): Beneficiary
+}
+
+type Beneficiary {
+ beneficiaryId: Int
+ beneficiaryName: String	
+ beneficiaryType: String	
+ nationalId: String	
+ nationalIdType: String	
+ sicCode: String	
+ orgSize: String	
+ postCode: String	
+ region: String	
+ country: String	
+ createdBy: String	
+ approvedBy: String	
+ status: String	
+ }
